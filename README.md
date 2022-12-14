@@ -3,11 +3,11 @@ RUN LOCAL "bin/dev"
 SPECS!! Create Specific Rails version
 
 
-mkdir @appname
+- mkdir @appname
 
-cd @appname
+- cd @appname
 
-echo 3.0.0 > .ruby-version
+- echo 3.0.0 > .ruby-version
 
 echo "source 'https://rubygems.org'" > Gemfile
 
