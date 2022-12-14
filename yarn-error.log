@@ -1,0 +1,37 @@
+Arguments: 
+  /usr/local/Cellar/node/19.2.0/bin/node /usr/local/bin/yarn build:css --watch
+
+PATH: 
+  /Users/ariellopez/.rvm/gems/ruby-3.0.0@sammple_test_app_1/bin:/Users/ariellopez/.rvm/gems/ruby-3.0.0@global/bin:/Users/ariellopez/.rvm/rubies/ruby-3.0.0/bin:/Users/ariellopez/.rvm/bin:/opt/homebrew/opt/libpq/bin:/usr/local/opt/imagemagick@6/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  19.2.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/ariellopez/Desktop/WORKPLACE/sammple_test_app_1/package.json: Unexpected non-whitespace character after JSON at position 40
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "app",
+    "private": "true"
+  },
+  "scripts": {
+    "build:css": "sass ./app/assets/stylesheets/application.bootstrap.scss:./app/assets/builds/application.css --no-source-map --load-path=node_modules"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
