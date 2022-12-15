@@ -13,7 +13,7 @@ echo "gem 'rails', '~>7.0.4'"  >>  Gemfile
 
 ### SETTING UP RVM
 ```
-rvm gemset use  3.1.3@sample_rails_test --create
+rvm gemset use  3.0.0@sample_rails_test --create
 bundle install
 ```
 
