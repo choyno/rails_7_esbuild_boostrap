@@ -22,7 +22,7 @@
     <%= f.input_field :content, as: :text, class: "form-control", rows: "3" %>
   </div>
 
-  <% unless locals[:article].new_record? %>
+  <% if !locals[:article].new_record? && locals[:article].featured_image&.url%>
     <%= image_tag(asset_path(locals[:article].featured_image.url), class: "img-fluid") %>
     <br />
     <br />
