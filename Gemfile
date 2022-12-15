@@ -77,3 +77,4 @@ end
 gem "simple_form"  #form handle
 gem 'acts_as_paranoid' #soft delete
 
+gem 'carrierwave' #image upload

@@ -22,5 +22,14 @@
     <%= f.input_field :content, as: :text, class: "form-control", rows: "3" %>
   </div>
 
+  <% unless locals[:article].new_record? %>
+    <%= image_tag(asset_path(locals[:article].featured_image.url), class: "img-fluid") %>
+    <br />
+    <br />
+  <% end %>
+
+  <%= f.input_field :featured_image, as: :file, class: "form-control", rows: "3" %>
+  <br />
+
   <%= f.button :submit, class: "btn btn-primary mb-3" %>
 <% end %>
