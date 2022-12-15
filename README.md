@@ -74,3 +74,6 @@ https://github.com/rails/rails/issues/44185
 
 HOW TO INSTALL CSS AND JS
 https://mixandgo.com/learn/ruby-on-rails/how-to-install-bootstrap
+
+EGUIDE GETTING STARTED
+https://edgeguides.rubyonrails.org/getting_started.html
