@@ -1,5 +1,10 @@
 <%= simple_form_for locals[:article] do |f| %>
   <div class="mb-3">
+
+    <% locals[:article].errors.full_messages_for(:title).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+
     <label for="exampleFormControlInput1" class="form-label">
       TITLE
     </label>
@@ -9,6 +14,11 @@
     <label for="exampleFormControlInput1" class="form-label">
       CONTENT
     </label>
+
+    <% locals[:article].errors.full_messages_for(:content).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+
     <%= f.input_field :content, as: :text, class: "form-control", rows: "3" %>
   </div>
 

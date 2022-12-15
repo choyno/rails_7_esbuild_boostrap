@@ -18,7 +18,7 @@ class ArticlesController < ApplicationController
       flash[:notice] = "Successfully save"
       redirect_to root_path
     else
-      render new_article_path
+      render :new, status: :unprocessable_entity
     end
   end
 
@@ -27,16 +27,7 @@ class ArticlesController < ApplicationController
       flash[:notice] = "Successfully Updated"
       redirect_to root_path
     else
-      render "edit"
-    end
-  end
-
-  def update
-    if @article.update(article_params)
-      flash[:notice] = "Successfully Updated"
-      redirect_to root_path
-    else
-      render "edit"
+      render :edit, status: :unprocessable_entity
     end
   end
 
