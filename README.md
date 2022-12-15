@@ -36,3 +36,9 @@ NEW MAC OS ISSUE PG
 https://juanitofatas.com/fragments/pg
 brew reinstall icu4c
 brew services restart postgresql
+
+DELETE ISSUE RAILS
+https://github.com/rails/rails/issues/44185
+
+HOW TO INSTALL CSS AND JS
+https://mixandgo.com/learn/ruby-on-rails/how-to-install-bootstrap

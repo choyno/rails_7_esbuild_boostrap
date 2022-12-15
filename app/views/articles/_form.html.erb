@@ -1,0 +1,16 @@
+<%= simple_form_for locals[:article] do |f| %>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">
+      TITLE
+    </label>
+    <%= f.input_field :title, class: "form-control", placeholder: "Title"  %>
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">
+      CONTENT
+    </label>
+    <%= f.input_field :content, as: :text, class: "form-control", rows: "3" %>
+  </div>
+
+  <%= f.button :submit, class: "btn btn-primary mb-3" %>
+<% end %>

@@ -68,30 +68,31 @@
   <thead>
     <tr>
       <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col">Title</th>
+      <th scope="col">Content</th>
+      <th scope="col">Options</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
+
+    <% @articles.each do | article | %>
+      <tr>
+        <td><%= article.id  %></td>
+        <th scope="row"><%= article.title %></th>
+        <td><%= article.content %></td>
+        <td>
+
+          <div class="d-grid gap-2">
+            <%= button_to "Edit", edit_article_path(article.id), class: "btn btn-primary btn-sm", method: :get %>
+            <%= button_to article, class: "btn btn-secondary btn-sm", method: :delete do %>
+            asdas
+          <% end %>
+          </div>
+       </td>
+      </tr>
+    <% end %>
+
   </tbody>
 </table>
-wow
+
 </div>
