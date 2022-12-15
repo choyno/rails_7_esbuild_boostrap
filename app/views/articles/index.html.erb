@@ -83,10 +83,8 @@
         <td>
 
           <div class="d-grid gap-2">
-            <%= button_to "Edit", edit_article_path(article.id), class: "btn btn-primary btn-sm", method: :get %>
-            <%= button_to article, class: "btn btn-secondary btn-sm", method: :delete do %>
-            asdas
-          <% end %>
+            <%= link_to "Edit", edit_article_path(article.id), class: "btn btn-primary btn-sm", method: :get %>
+            <%= link_to 'Delete', article_path(article), data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' } %>
           </div>
        </td>
       </tr>

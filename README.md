@@ -29,6 +29,15 @@ npm install -g yarn
 
 bundle add cssbundling-rails
 ./bin/rails css:install:bootstrap
+.bin/rails javascript:install:esbuild
+
+Fxing JS Issue
+yarn add @hotwired/turbo-rails
+yarn add @hotwired/stimulus
+
+>add this to your app/javascript/application.js
+import "@hotwired/turbo-rails"
+import * as bootstrap from "bootstrap"
 
 NEW MAC OS ISSUE PG
 
