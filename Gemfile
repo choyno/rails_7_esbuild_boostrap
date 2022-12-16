@@ -72,7 +72,11 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+  gem "rspec-rails"
+  gem 'rspec-request_describer'
+  gem 'rails-controller-testing'
 end
+
 
 gem "simple_form"  #form handle
 gem 'acts_as_paranoid' #soft delete
