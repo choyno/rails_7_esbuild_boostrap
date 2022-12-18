@@ -1,8 +1,5 @@
-require 'rspec/request_describer'
 
 RSpec.configure do |config|
-
-  config.include RSpec::RequestDescriber, type: :request
 
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest

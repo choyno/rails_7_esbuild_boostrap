@@ -1,9 +1,6 @@
 require "rails_helper"
 
 RSpec.describe 'GET /' do
-  let(:article) do
-    Article.create(title: 'sample',  content: 'sample')
-  end
 
   before(:each) do
     sample_data = [

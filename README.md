@@ -75,5 +75,15 @@ https://github.com/rails/rails/issues/44185
 HOW TO INSTALL CSS AND JS
 https://mixandgo.com/learn/ruby-on-rails/how-to-install-bootstrap
 
-EGUIDE GETTING STARTED
+RUBY GUIDE GETTING STARTED
 https://edgeguides.rubyonrails.org/getting_started.html
+
+RSPEC GUIDE
+https://qiita.com/izumin5210/items/de614b5b5b2c44486e87
+https://tech.andpad.co.jp/entry/2022/12/07/100000
+
+YOUTUBE SERIES GUIDE REQUEST RSPEC
+https://www.youtube.com/watch?v=uKVxs1o5ivg&t=0s
+
+RSPEC BEST PRACTICES
+https://matthewlehner.net/rails-api-testing-guidelines

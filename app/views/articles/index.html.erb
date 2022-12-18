@@ -45,7 +45,7 @@
           <%= image_tag(asset_path(article.featured_image.url), class: "img-thumbnail") if article.featured_image&.url %>
         </td>
         <td><%= article.id  %></td>
-        <th scope=""><%= article.title %></th>
+        <td scope=""><%= article.title %></td>
         <td class="col"><%= article.content %></td>
         <td>
           <div class="row row-cols-2">
